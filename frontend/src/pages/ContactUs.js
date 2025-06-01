@@ -3,6 +3,9 @@ import { Link } from 'react-router-dom';
 import "../App.css";
 
 function ContactUs() {
+
+  console.log("🌐 Backend URL:", process.env.REACT_APP_BACKEND_URL);
+
   const [full_name, setFullName] = useState('');
   const [email, setEmail] = useState('');
   const [subject, setSubject] = useState('');
@@ -19,7 +22,7 @@ function ContactUs() {
     };
 
     try {
-      const response = await fetch(`${import.meta.env.VITE_BACKEND_URL}/api/contact/sendMessage`, {
+        const response = await fetch(`${process.env.REACT_APP_BACKEND_URL}/api/contact/sendMessage`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
