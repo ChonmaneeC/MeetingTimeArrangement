@@ -4,7 +4,7 @@ require('dotenv').config();
 const express = require('express');
 const cors = require('cors'); // ✅ add this
 const contactRoutes = require('../routes/contactRoutes');
-// const signupRoutes = require('../routes/signupRoutes');
+const signupRoutes = require('../routes/signupRoutes');
 // const loginRoutes = require('../routes/loginRoutes');
 // const calendarRoutes = require('../routes/calendarRoutes');
 // const meetingRoutes = require('../routes/meetingRoutes.js');
@@ -23,7 +23,7 @@ app.use(cors({
 app.use(express.json());
 
 app.use('/api/contact', contactRoutes);
-// app.use('/api/signup', signupRoutes);
+app.use('/api/signup', signupRoutes);
 // app.use('/api/login', loginRoutes);
 // app.use('/api/calendar', calendarRoutes);
 // app.use('/api/meetings', meetingRoutes);
