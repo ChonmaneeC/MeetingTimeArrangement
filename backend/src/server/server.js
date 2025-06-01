@@ -30,6 +30,11 @@ app.use('/api/contact', contactRoutes);
 // app.use('/api/invite', inviteRoutes);
 // app.use('/api/invitee', inviteAvailabilityRoutes);
 
+// ✅ Hello endpoint เพื่อตรวจสอบ backend ว่ายังทำงานอยู่
+app.get('/api/hello', (req, res) => {
+  res.send('Hello from the API!');
+});
+
 const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => {
     console.log(`Server running on port ${PORT}`);
