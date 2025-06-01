@@ -61,45 +61,26 @@ function ContactUs() {
         </div>
       </header>
 
-      <h1>Contact Us</h1>
-      <form onSubmit={handleSubmit}>
-        <div>
-          <label>Full Name:</label>
-          <input 
-            type="text" 
-            value={full_name} 
-            onChange={(e) => setFullName(e.target.value)} 
-            required
-          />
-        </div>
-        <div>
-          <label>Email:</label>
-          <input 
-            type="email" 
-            value={email} 
-            onChange={(e) => setEmail(e.target.value)} 
-            required
-          />
-        </div>
-        <div>
-          <label>Subject:</label>
-          <input 
-            type="text" 
-            value={subject} 
-            onChange={(e) => setSubject(e.target.value)} 
-            required
-          />
-        </div>
-        <div>
-          <label>Message:</label>
-          <textarea 
-            value={message} 
-            onChange={(e) => setMessage(e.target.value)} 
-            required
-          />
-        </div>
-        <button type="submit">Send Message</button>
-      </form>
+      <div className="contact-form-container">
+        <h1>We’d Love to Hear From You!</h1>
+        <p className="subtext">If you have any questions, feel free to reach out to us using the form below.</p>
+
+        <form className="styled-contact-form" onSubmit={handleSubmit}>
+          <label>FULL NAME :</label>
+          <input type="text" value={full_name} onChange={(e) => setFullName(e.target.value)} required />
+
+          <label>EMAIL :</label>
+          <input type="email" value={email} onChange={(e) => setEmail(e.target.value)} required />
+
+          <label>SUBJECT :</label>
+          <input type="text" value={subject} onChange={(e) => setSubject(e.target.value)} required />
+
+          <label>YOUR MESSAGE :</label>
+          <textarea value={message} onChange={(e) => setMessage(e.target.value)} required />
+
+          <button type="submit">SEND MESSAGE</button>
+        </form>
+      </div>
     </div>
   );
 }
