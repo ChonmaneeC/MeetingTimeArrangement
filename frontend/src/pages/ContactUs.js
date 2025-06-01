@@ -19,7 +19,7 @@ function ContactUs() {
     };
 
     try {
-      const response = await fetch('http://localhost:5000/api/contact/sendMessage', {
+      const response = await fetch(`${import.meta.env.VITE_BACKEND_URL}/api/contact/sendMessage`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
