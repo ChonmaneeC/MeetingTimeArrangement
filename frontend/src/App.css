@@ -7,7 +7,7 @@
 
 body {
   font-family: Arial, sans-serif;
-  background-color: #3A482F; /* Green background */
+  background-color: #2f4324; /* Green background */
 }
 
 /* Home container */
@@ -239,7 +239,7 @@ body {
 
 /* Contact Us */
 .contact-wrapper {
-  background-color: #2e3b25;
+  background-color: #2f4324;
   min-height: 100vh;
   padding-top: 100px; /* ขยับลงจาก Header */
   display: flex;
