@@ -7,7 +7,7 @@
 
 body {
   font-family: Arial, sans-serif;
-  background-color: #006400; /* Green background */
+  background-color: #3A482F; /* Green background */
 }
 
 /* Home container */
@@ -186,11 +186,57 @@ body {
 }
 
 /* Q&A */
-.qa-item {
-  margin-top: 50px; /* เพิ่มระยะห่างจากด้านบน */
-  padding: 20px;
-  color: white;
+.qa-container {
+  background-color: #2f4324;
+  min-height: 100vh;
+  padding-top: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
 }
+
+.qa-content-box {
+  background-color: #e0e0e0;
+  border-radius: 20px;
+  padding: 30px;
+  width: 90%;
+  max-width: 1000px;
+}
+
+.qa-item {
+  margin-bottom: 15px;
+  background: white;
+  border-radius: 10px;
+  padding: 15px;
+  transition: all 0.3s ease;
+}
+
+.qa-question {
+  background: none;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  width: 100%;
+  text-align: left;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.qa-answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease, opacity 0.4s ease;
+  opacity: 0;
+  margin-left: 25px;
+}
+
+.qa-answer.visible {
+  max-height: 200px;
+  opacity: 1;
+}
+
+
 
 /* Contact Us */
 .contact-container {
