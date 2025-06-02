@@ -411,3 +411,116 @@ body {
 .signup-form .login-link:hover {
   text-decoration: underline;
 }
+
+/* Login Up */
+.login-wrapper {
+  background-color: #2f4324;
+  min-height: 100vh;
+  padding-top: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.login-container {
+  background-color: transparent;
+  color: #f9c2eb;
+  text-align: center;
+  max-width: 900px;
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 30px;
+}
+
+.login-container h1 {
+  margin-bottom: 1.5rem; /* หรือเพิ่มตามที่ต้องการ เช่น 2rem */
+}
+
+/* Login Form */
+.login-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;  /* จัดให้อยู่กลาง */
+  gap: 1rem;
+  max-width: 600;     /* จำกัดความกว้างสูงสุด */
+  width: 100%;
+  margin: 0 auto;       /* ช่วยให้อยู่ตรงกลาง */
+}
+
+/* แถวละบรรทัดเดียว: label + input */
+.login-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* Label อยู่ซ้าย */
+.login-form label {
+  width: 180px;
+  text-align: right;
+  font-weight: bold;
+  color: #f9c2eb;
+  white-space: nowrap; 
+}
+
+/* Input อยู่ขวา */
+.login-form input {
+  width: 120%; /* ให้ input เต็มความกว้างของฟอร์มที่จำกัดไว้ */
+  padding: 12px;
+  border-radius: 16px;
+  border: none;
+  font-size: 1rem;
+}
+
+
+/* Buttons */
+.button-group {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.submit-button {
+  background-color: #FFB6C1;
+  color: #36454F;
+  padding: 15px 30px;
+  border-radius: 20px;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.cancel-button {
+  background-color: #F08080;
+  color: #8B0000;
+  padding: 15px 30px;
+  border-radius: 20px;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.submit-button:hover {
+  background-color: #FFA07A;
+}
+
+.cancel-button:hover {
+  background-color: #CD5C5C;
+}
+
+/* Sign Link */
+.login-form .signup-link {
+  color: #FF69B4;
+  text-decoration: none;
+  font-weight: bold;
+  display: block;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.login-form .signup-link:hover {
+  text-decoration: underline;
+}
