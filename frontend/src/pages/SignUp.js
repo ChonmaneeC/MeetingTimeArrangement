@@ -64,33 +64,43 @@ function Signup() {
         </div>
       </header>
 
-      <div className="signup-box">
-        <form onSubmit={handleSignup} className="signup-form">
-          <label>FULL NAME :</label>
-          <input type="text" value={fullName} onChange={e => setFullName(e.target.value)} required />
-
-          <label>EMAIL :</label>
-          <input type="email" value={email} onChange={e => setEmail(e.target.value)} required />
-
-          <label>PHONE NUMBER :</label>
-          <input type="tel" value={phoneNumber} onChange={e => setPhoneNumber(e.target.value)} required />
-
-          <label>PASSWORD :</label>
-          <input type="password" value={password} onChange={e => setPassword(e.target.value)} required />
-
-          <label>CONFIRM PASSWORD :</label>
-          <input type="password" value={confirmPassword} onChange={e => setConfirmPassword(e.target.value)} required />
-
-          <div className="button-group">
-            <button type="signup" className="signup-button">SIGN UP</button>
-          </div>
-
-          <p>Already have an account? <Link to="/login" className="login-link">LOGIN here</Link></p>
-        </form>
+      <div className="signup-wrapper">
+  <div className="signup-container">
+    <h1>CREATE AN ACCOUNT</h1>
+    <form onSubmit={handleSignup} className="signup-form">
+      <div className="signup-row">
+        <label>FULL NAME :</label>
+        <input type="text" value={fullName} onChange={e => setFullName(e.target.value)} required />
+      </div>
+      <div className="signup-row">
+        <label>EMAIL :</label>
+        <input type="email" value={email} onChange={e => setEmail(e.target.value)} required />
+      </div>
+      <div className="signup-row">
+        <label>PHONE NUMBER :</label>
+        <input type="tel" value={phoneNumber} onChange={e => setPhoneNumber(e.target.value)} required />
+      </div>
+      <div className="signup-row">
+        <label>PASSWORD :</label>
+        <input type="password" value={password} onChange={e => setPassword(e.target.value)} required />
+      </div>
+      <div className="signup-row">
+        <label>CONFIRM PASSWORD :</label>
+        <input type="password" value={confirmPassword} onChange={e => setConfirmPassword(e.target.value)} required />
       </div>
 
+      <div className="button-group">
+        <button type="submit" className="submit-button">SIGN UP</button>
+      </div>
+
+      <p>Already have an account? <Link to="/login" className="login-link">LOGIN here</Link></p>
+    </form>
+  </div>
+</div>
+
+
     </div>
-  );
+);
 }
 
 export default Signup;
