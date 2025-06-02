@@ -301,20 +301,21 @@ body {
 
 /* Sign Up */
 .signup-container {
-  background-color: #36454F;
+  background-color: #2f4324;
   min-height: 100vh;
+  padding-top: 100px;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
 }
 
-/* Signup Box */
 .signup-box {
-  background-color: #D3D3D3;
-  width: 400px;
-  padding: 40px;
+  background-color: #e0e0e0;
   border-radius: 20px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  padding: 30px;
+  width: 90%;
+  max-width: 1000px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
 }
 
 /* Signup Form */
